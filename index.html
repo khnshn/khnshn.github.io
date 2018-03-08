@@ -1,2 +1,62 @@
-> Hello World!
-> My <a href="https://github.com/khnshn">GitHub profile</a>.
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<title>Alireza Khanshan @ GitHub</title>
+<style>
+    body{
+        margin: 0;
+        background-color: black;
+    }
+    p{
+        color:white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .bolder{
+        font-weight: bolder;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .shell{
+        opacity: .8;
+    }
+    div p{
+        text-indent: 50px;
+        line-height: 10px;
+    }
+    *{
+        font-family: 'Source Code Pro', monospace;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+    .blink{
+        position: absolute;
+        display: inline-block;
+        width: 8px;
+        height: 17px;
+        background-color: white;
+        animation: blinker 1.2s cubic-bezier(0.000, 0.985, 0.000, 1.000) infinite;
+    }
+</style>
+</head>
+
+<body>
+<p class="shell">Welcome to My <span class="bolder">GitHub</span> Page</p>
+<div>
+    <p>* My name is Alireza Khanshan</p>
+    <p>* Machine Learning and Data Science, what more could be fun? ☺ </p>
+</div>
+<p><span class="shell">khnshn@github:~$</span> my <span class="bolder">GitHub</span> profile is at <a href="https://github.com/khnshn">https://github.com/khnshn</a>
+<br/><span class="shell">khnshn@github:~$</span> check back for updates<span class="blink"></span></p>
+</body>
+
+</html> 
